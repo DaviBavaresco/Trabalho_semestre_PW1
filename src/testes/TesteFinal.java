@@ -1,4 +1,4 @@
-package fretes;
+package testes;
 
 import pessoas.Cliente;
 

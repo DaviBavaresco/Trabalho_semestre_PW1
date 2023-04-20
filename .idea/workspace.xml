@@ -4,24 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b24ef6d1-f099-4b04-88ed-035cd53882ac" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Trabalho_semestre_PW1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TesteCliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TesteFrete.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fretes/Final.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fretes/Frete.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fretes/ItemFrete.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fretes/TesteFinal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fretes/TesteFrete2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pessoas/Cliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pessoas/Pessoa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/util/Situacao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/util/Validador.java" afterDir="false" />
+    <list default="true" id="b24ef6d1-f099-4b04-88ed-035cd53882ac" name="Changes" comment="Primeiro commit,&#10;- Arrumar enum&#10;- Arrumar interface">
+      <change beforePath="$PROJECT_DIR$/src/TesteCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testes/TesteCliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TesteFrete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testes/TesteFrete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fretes/Final.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testes/Final.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fretes/TesteFinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testes/TesteFinal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fretes/TesteFrete2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testes/TesteFrete2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +54,29 @@
       <option name="presentableId" value="Default" />
       <updated>1681768364110</updated>
     </task>
+    <task id="LOCAL-00001" summary="Primeiro commit,&#10;- Arrumar enum&#10;- Arrumar interface">
+      <created>1682010993320</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1682010993320</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Primeiro commit,&#10;- Arrumar enum&#10;- Arrumar interface" />
+    <option name="LAST_COMMIT_MESSAGE" value="Primeiro commit,&#10;- Arrumar enum&#10;- Arrumar interface" />
   </component>
 </project>

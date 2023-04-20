@@ -1,3 +1,5 @@
+package testes;
+
 import pessoas.Cliente;
 
 public class TesteCliente {

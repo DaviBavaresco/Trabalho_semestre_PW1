@@ -1,4 +1,7 @@
-package fretes;
+package testes;
+
+import fretes.Frete;
+import fretes.ItemFrete;
 
 import java.util.Iterator;
 import java.util.TreeSet;

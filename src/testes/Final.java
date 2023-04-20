@@ -1,5 +1,7 @@
-package fretes;
+package testes;
 
+import fretes.Frete;
+import fretes.ItemFrete;
 import pessoas.Cliente;
 import util.Validador;
 
