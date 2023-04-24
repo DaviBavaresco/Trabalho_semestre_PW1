@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b24ef6d1-f099-4b04-88ed-035cd53882ac" name="Changes" comment="Primeiro commit,&#10;- Arrumar enum&#10;- Arrumar interface">
-      <change beforePath="$PROJECT_DIR$/src/TesteCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testes/TesteCliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TesteFrete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testes/TesteFrete.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fretes/Final.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testes/Final.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fretes/TesteFinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testes/TesteFinal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fretes/TesteFrete2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testes/TesteFrete2.java" afterDir="false" />
+    <list default="true" id="b24ef6d1-f099-4b04-88ed-035cd53882ac" name="Changes" comment="Segundo commit&#10;- Pastas arrumadas">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fretes/Frete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fretes/Frete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fretes/ItemFrete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fretes/ItemFrete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testes/Final.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testes/Final.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testes/TesteFinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testes/TesteFinal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/Situacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/Situacao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +43,8 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Trabalho_semestre_PW1-Clone&quot;
   }
 }</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -61,7 +63,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682010993320</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Segundo commit&#10;- Pastas arrumadas">
+      <created>1682011214741</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1682011214741</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -77,6 +86,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Primeiro commit,&#10;- Arrumar enum&#10;- Arrumar interface" />
-    <option name="LAST_COMMIT_MESSAGE" value="Primeiro commit,&#10;- Arrumar enum&#10;- Arrumar interface" />
+    <MESSAGE value="Segundo commit&#10;- Pastas arrumadas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Segundo commit&#10;- Pastas arrumadas" />
   </component>
 </project>

@@ -15,6 +15,7 @@ public class Final {
     public static void main(String[] args) {
         List<Frete> fretes = new ArrayList<Frete>();
 
+
         while(true){
             switch(montaMenu()){
                 case 1:
@@ -26,11 +27,21 @@ public class Final {
                     Set<ItemFrete> itens=new TreeSet<>();
                     for(int i=0;i<quantidade;i++){
                         itens.add(new ItemFrete(JOptionPane.showInputDialog("Qual a descrição do item? "),
-                                Double.parseDouble(JOptionPane.showInputDialog("Qual o peso do item? "))));
+                                Double.parseDouble(JOptionPane.showInputDialog("Qual o peso do item em KG? "))));
                     }
-                    fretes.add(new Frete(c1,Double.parseDouble(JOptionPane.showInputDialog("Qual o valor do frete: ")),
+                    Frete f=new Frete(c1,Double.parseDouble(JOptionPane.showInputDialog("Qual o valor do frete: ")),
                             JOptionPane.showInputDialog("Qual a cidade de origem? "),
-                            JOptionPane.showInputDialog("Qual o destino? "),itens));
+                            JOptionPane.showInputDialog("Qual o destino? "),itens);
+                    int x = Integer.parseInt(JOptionPane.showInputDialog("Qual o estado do frete: 1-> Em andamento, 2-> Encerrado"));
+                    if (x == 2) {
+                        f.encerrada();
+                    };
+                    if(f.validarPeso()){
+                        fretes.add(f);
+                    }else {
+                        JOptionPane.showMessageDialog(null,"Peso invalido");
+                    }
+
                     break;
 
                 case 2:

@@ -18,7 +18,7 @@ public class Frete implements Validador {
 
     public Frete(Cliente cliente, double valor, String cidadeOrigem, String cidadeDestino,Set<ItemFrete> itens) {
         this.cliente = cliente;
-        itens = new TreeSet<>();
+        this.itens = itens;
         this.valor = valor;
         this.cidadeOrigem = cidadeOrigem;
         this.cidadeDestino = cidadeDestino;
@@ -31,14 +31,15 @@ public class Frete implements Validador {
     public Frete() {
     }
     public void cancelar(){
-        this.tipo = Situacao.CANCELADA;
+        this.tipo = Situacao.CANCELADO;
     }
     public void encerrada(){
-        this.tipo = Situacao.ENCERRADA;
+        this.tipo = Situacao.ENCERRADO;
     }
     @Override
     public boolean validarPeso() {
-        if(this.getPesoTotal()>=100 || this.getPesoTotal()<=1){
+        if(getPesoTotal()>=100 || getPesoTotal()<1){
+            this.tipo=Situacao.CANCELADO;
             return false;
         }else
         return true;
@@ -54,13 +55,7 @@ public class Frete implements Validador {
     public void adicionarItem(ItemFrete item){
         itens.add(item);
     }
-    public boolean Situacao(){
-        if(validarPeso()==true){
-            return true;
-        }else
-            this.tipo=Situacao.CANCELADA;
-            return false;
-    }
+
 
     public Cliente getCliente() {
         return cliente;
@@ -113,14 +108,15 @@ public class Frete implements Validador {
 
     @Override
     public String toString() {
-        return "Frete{" +
-                "cliente=" + cliente +
-                ", itens=" + itens +
-                ", valor=" + valor +
-                ", cidadeOrigem='" + cidadeOrigem + '\'' +
-                ", cidadeDestino='" + cidadeDestino + '\'' +
-                ", pesoTotal=" + getPesoTotal() +
-                ", tipo=" + tipo +
-                '}';
+        return " Cliente=" + cliente.getNome() +
+                " CPF=" + cliente.getCpf() +
+                " Endereço=" + cliente.getEndereco() +
+                " Telefone=" + cliente.getTelefone() +
+                " Itens= " + getItens() +
+                " Valor= " + valor +
+                " Cidade de Origem= " + cidadeOrigem +
+                " Cidade de Destino= " + cidadeDestino +
+                " Peso Total= " + getPesoTotal() +
+                " Situação= " + tipo.getDescricao();
     }
 }
