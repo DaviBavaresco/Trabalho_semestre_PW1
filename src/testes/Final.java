@@ -36,12 +36,8 @@ public class Final {
                     if (x == 2) {
                         f.encerrada();
                     };
-                    if(f.validarPeso()){
-                        fretes.add(f);
-                    }else {
-                        JOptionPane.showMessageDialog(null,"Peso invalido");
-                    }
-
+                   f.validarPeso();
+                   fretes.add(f);
                     break;
 
                 case 2:
@@ -107,6 +103,23 @@ public class Final {
                     break;
 
                 case 7:
+                    for(Frete frete: fretes){
+                        if(frete.getTipo().getId()==2) System.out.println(frete.toString());
+                    }
+                    break;
+
+                case 8:
+                    for(Frete frete: fretes){
+                        if(frete.getTipo().getId()==3) System.out.println(frete.toString());
+                    }
+                    break;
+
+                case 9:
+                    for(Frete frete: fretes){
+                        if(frete.getTipo().getId()==1) System.out.println(frete.toString());
+                    }
+
+                case 10:
                     System.exit(0);
                     break;
 
@@ -123,7 +136,10 @@ public static int montaMenu(){
                 "4 – Pesquisar Frete usando cidade de origem e destino\n"+
                 "5 – Listar todos os Fretes\n"+
                 "6 – Listar todos os Clientes cadastrados\n"+
-                "7 – Sair \n";
+                "7 – Listar todos os Fretes cancelados\n"+
+                "8 – Listar todos os Fretes encerrados\n"+
+                "9 – Listar todos os Fretes em andamento\n"+
+                "10 – Sair \n";
         return Integer.parseInt(JOptionPane.showInputDialog(menu));
 }
 }

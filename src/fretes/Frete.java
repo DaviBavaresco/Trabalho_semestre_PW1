@@ -41,8 +41,7 @@ public class Frete implements Validador {
         if(getPesoTotal()>=100 || getPesoTotal()<1){
             this.tipo=Situacao.CANCELADO;
             return false;
-        }else
-        return true;
+        }else return true;
     }
     public double getPesoTotal(){
         double peso=0;
