@@ -41,6 +41,7 @@ public class TesteFinal {
         for(Frete frete: fretes){
             System.out.println(frete.getCliente());
         }
+        System.out.println(Cliente.getTotal());
 
     }
 }

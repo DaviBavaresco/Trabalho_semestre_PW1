@@ -6,10 +6,7 @@ import pessoas.Cliente;
 import util.Validador;
 
 import javax.swing.*;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
-import java.util.TreeSet;
+import java.util.*;
 
 public class Final {
     public static void main(String[] args) {
@@ -87,6 +84,7 @@ public class Final {
                     break;
 
                 case 5:
+                    fretes.sort(Comparator.comparingDouble(Frete::getValor));
                     for(Frete frete: fretes){
                         if(frete!=null){
                             JOptionPane.showMessageDialog(null,frete.toString());
@@ -103,18 +101,21 @@ public class Final {
                     break;
 
                 case 7:
+                    fretes.sort(Comparator.comparingDouble(Frete::getValor));
                     for(Frete frete: fretes){
                         if(frete.getTipo().getId()==2) System.out.println(frete.toString());
                     }
                     break;
 
                 case 8:
+                    fretes.sort(Comparator.comparingDouble(Frete::getValor));
                     for(Frete frete: fretes){
                         if(frete.getTipo().getId()==3) System.out.println(frete.toString());
                     }
                     break;
 
                 case 9:
+                    fretes.sort(Comparator.comparingDouble(Frete::getValor));
                     for(Frete frete: fretes){
                         if(frete.getTipo().getId()==1) System.out.println(frete.toString());
                     }
@@ -131,15 +132,15 @@ public class Final {
 
 public static int montaMenu(){
         String menu="1 – Cadastrar Frete\n"+
-                     "2 – Pesquisar Frete usando o nome do cliente\n"+
-                "3 – Pesquisar Frete usando CPF do Cliente\n"+
-                "4 – Pesquisar Frete usando cidade de origem e destino\n"+
-                "5 – Listar todos os Fretes\n"+
-                "6 – Listar todos os Clientes cadastrados\n"+
-                "7 – Listar todos os Fretes cancelados\n"+
-                "8 – Listar todos os Fretes encerrados\n"+
-                "9 – Listar todos os Fretes em andamento\n"+
-                "10 – Sair \n";
+                    "2 – Pesquisar Frete usando o nome do cliente\n"+
+                    "3 – Pesquisar Frete usando CPF do Cliente\n"+
+                    "4 – Pesquisar Frete usando cidade de origem e destino\n"+
+                    "5 – Listar todos os Fretes\n"+
+                    "6 – Listar todos os Clientes cadastrados\n"+
+                    "7 – Listar todos os Fretes cancelados\n"+
+                    "8 – Listar todos os Fretes encerrados\n"+
+                    "9 – Listar todos os Fretes em andamento\n"+
+                    "10 – Sair \n";
         return Integer.parseInt(JOptionPane.showInputDialog(menu));
 }
 }
