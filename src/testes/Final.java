@@ -103,22 +103,23 @@ public class Final {
                 case 7:
                     fretes.sort(Comparator.comparingDouble(Frete::getValor));
                     for(Frete frete: fretes){
-                        if(frete.getTipo().getId()==2) System.out.println(frete.toString());
+                        if(frete.getTipo().getId()==2) JOptionPane.showMessageDialog(null,frete.toString());
                     }
                     break;
 
                 case 8:
                     fretes.sort(Comparator.comparingDouble(Frete::getValor));
                     for(Frete frete: fretes){
-                        if(frete.getTipo().getId()==3) System.out.println(frete.toString());
+                        if(frete.getTipo().getId()==3) JOptionPane.showMessageDialog(null,frete.toString());
                     }
                     break;
 
                 case 9:
                     fretes.sort(Comparator.comparingDouble(Frete::getValor));
                     for(Frete frete: fretes){
-                        if(frete.getTipo().getId()==1) System.out.println(frete.toString());
+                        if(frete.getTipo().getId()==1) JOptionPane.showMessageDialog(null,frete.toString());
                     }
+                    break;
 
                 case 10:
                     System.exit(0);
